@@ -1,4 +1,4 @@
-package com.HibernateReadisApp.domain;
+package com.HibernateApp.domain;
 
 public enum Continent {
     ASIA,

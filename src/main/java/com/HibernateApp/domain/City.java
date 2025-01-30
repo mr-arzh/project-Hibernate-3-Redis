@@ -1,4 +1,4 @@
-package com.HibernateReadisApp.domain;
+package com.HibernateApp.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;

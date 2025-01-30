@@ -1,4 +1,4 @@
-package com.HibernateReadisApp.domain;
+package com.HibernateApp.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -53,11 +53,11 @@ public class Country {
     @Column(name = "head_of_state")
     private String headOfState;
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "capital")
     private City city;
 
-    @OneToMany(fetch = FetchType.EAGER)
+    @OneToMany
     @JoinColumn(name = "country_id")
     private Set<CountryLanguage> languages;
 
